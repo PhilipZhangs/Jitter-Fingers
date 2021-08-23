@@ -3,11 +3,11 @@ const quoteDisplayElement = document.getElementById('quoteDisplay')
 const quoteInputElement = document.getElementById('quoteInput')
 const timerElement = document.getElementById('timer')
 
-let correct = true
-
 quoteInputElement.addEventListener('input', () => {
     const arrayQuote = quoteDisplayElement.querySelectorAll('span')
     const arrayValue = quoteInputElement.value.split('')
+
+    let correct = true
     arrayQuote.forEach((characterSpan, index) => {
         const character = arrayValue[index]
         if (character == null) {
