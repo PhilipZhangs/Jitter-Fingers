@@ -22,6 +22,41 @@ body,
   border-radius: 0.5rem;
   width: 700px;
   max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.errors, .accuracy,
+.cpm, .wpm {
+  background-color: #afe1af;
+  height: 60px; 
+  width: 70px;
+  margin: 8px;
+  padding: 12px;
+  border-radius: 20%;
+  box-shadow: black 5px 8px 5px;
+}
+
+.header_text {
+  text-transform: uppercase;
+  font-size: 0.5rem;
+  font-weight: 600;
+}
+
+.restart_btn {
+  display: none;
+  background-color: #326765;
+  font-size: 1.5rem;
+  padding: 10px;
+  border: 0px;
+  box-shadow: black 5px 8px 5px;
+}
+
+.curr_time, .curr_errors,
+.curr_accuracy, .curr_cpm,
+.curr_wpm {
+  font-size: 1.75rem;
 }
 
 .timer {

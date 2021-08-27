@@ -45,7 +45,7 @@ async function renderNewQuote() {
     startTimer();
 }
 
-let startTime
+let startTime = 60;
 
 function startTimer() {
     timerElement.innerText = 0

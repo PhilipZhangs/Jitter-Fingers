@@ -12,9 +12,29 @@
 
 <body>
     <div class="timer" id="timer"></div>
+    <div class="wpm">
+        <div class="header_text">WPM</div>
+        <div class="curr_wpm"></div>
+    </div>
+    <div class="cpm">
+        <div class="header_text">CPM</div>
+        <div class="curr_cpm"></div>
+    </div>
+    <div class="errors">
+        <div class="header_text">Errors</div>
+        <div class="curr_errors"></div>
+      </div>
+    <div class="accuracy">
+        <div class="header_text">Accuracy</div>
+        <div class="curr_accuracy"></div>
+    </div>
     <div class="container">
         <div class="quote-display" id="quoteDisplay"></div>
         <textarea id="quoteInput" class="quote-input" autofocus></textarea>
+        <button class="restart_btn"
+        onclick="resetValues()">
+        Restart
+      </button>
     </div>
 </body>
 
